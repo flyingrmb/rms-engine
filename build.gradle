@@ -1,14 +1,15 @@
-plugins {
-    id 'org.springframework.boot' version '2.0.1.RELEASE'
-    id 'java'
-}
+group 'com.newc.asset'
+version '0.0.2'
 
-jar {
-    baseName = 'rms-engine'
-    version = '0.0.1'
-}
+apply plugin: 'java'
 
 repositories {
     mavenLocal()
     maven {url "http://maven.aliyun.com/nexus/content/groups/public/"}
+}
+
+dependencies {
+    compile group: 'com.newc.asset', name: 'iframe', version: '0.0.2'
+    compile group: 'com.newc.asset', name: 'irule', version: '0.0.2'
+    testCompile group: 'com.newc.asset', name: 'itest', version: '0.0.2'
 }
