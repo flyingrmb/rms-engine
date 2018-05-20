@@ -1,4 +1,4 @@
-package com.ppmoney.rms.engine;
+package com.ppmoney.asset.rms.engine;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ppmoney.asset.irule.entity.Rule;
@@ -45,5 +45,12 @@ public class ApplicationTest {
 
         Rule rule = mapper.readValue(resource.getFile(), Rule.class);
         assertThat(rule, is(notNullValue()));
+    }
+
+    @Autowired(required = false)
+    private Application application;
+    @Test
+    public void configClassShouldBeInitializedAsABean() {
+        assertThat(application, is(notNullValue()));
     }
 }

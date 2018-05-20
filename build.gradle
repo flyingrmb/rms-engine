@@ -14,5 +14,5 @@ dependencies {
     compile group: 'com.ppmoney.asset', name: 'irule', version: '0.0.2'
     // https://mvnrepository.com/artifact/com.h2database/h2
     compile group: 'com.h2database', name: 'h2', version: '1.4.197'
-    testCompile group: 'com.ppmoney.asset', name: 'itest', version: '0.0.2'
+    compile group: 'com.ppmoney.asset', name: 'itest', version: '0.0.2'
 }

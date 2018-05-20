@@ -13,12 +13,12 @@ import java.util.List;
  * Created by paul on 2018/5/15.
  */
 @RestController
-public class WelcomeController {
+public class HomepageController {
     @Autowired
     private StudentRepository studentRepository;
 
     @RequestMapping("/")
-    List<Student> home() {
+    public List<Student> home() {
         List<Student> students = studentRepository.findAll();
         return students;
     }
