@@ -1,0 +1,7 @@
+[{
+  "id" : 10010,
+  "sel" : "['310115200001011713']",
+  "sources" : "[{'path': 'person', 'ks': ['id'], 'vs': { 'income' : {'month1': {'salary': null, 'stock': null},'month2': {'salary': null, 'stock': null},'month3': {'salary': null, 'stock': null},'month4': {'salary': null, 'stock': null},'month5': {'salary': null, 'stock': null},'month6': {'salary': null, 'stock': null},'month7': {'salary': null, 'stock': null},'month8': {'salary': null, 'stock': null},'month9': {'salary': null, 'stock': null},'month10': {'salary': null, 'stock': null},'month11': {'salary': null, 'stock': null},'month12': {'salary': null, 'stock': null}}}}]",
+  "alg" : "{'name' : 'sum','config' : null}",
+  "target" : "{'path' : 'person','ks':['id'],'vs':{'total': null}}"
+}]
